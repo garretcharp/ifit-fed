@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
       lineHeight: '90px'
     },
     margin: '0',
-    padding: '0'
+    padding: '0 24px'
   },
   ctaButton: {
     backgroundColor: '#0069d2',
