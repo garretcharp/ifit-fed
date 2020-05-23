@@ -2,6 +2,16 @@ import React from 'react'
 import Background from './background.png'
 import { StyleSheet, css } from 'aphrodite'
 
+const opacityKeyframes = {
+  from: {
+    opacity: 0
+  },
+
+  to: {
+    opacity: 1
+  }
+}
+
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
@@ -17,6 +27,9 @@ const styles = StyleSheet.create({
     padding: '0 36px'
   },
   heroText: {
+    animationName: [opacityKeyframes],
+    animationDuration: '2s',
+    animationIterationCount: '1',
     color: '#ffffff',
     fontFamily: 'Proxima Nova Lt',
     fontSize: '22px',
@@ -57,7 +70,11 @@ const styles = StyleSheet.create({
       lineHeight: '14px',
       padding: '21px 82px'
     },
-    marginTop: '77px'
+    marginTop: '77px',
+    ':hover': {
+      backgroundColor: '#0f87ff'
+    },
+    transition: 'background-color 0.5s ease'
   }
 })
 

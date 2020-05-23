@@ -20,6 +20,10 @@ const styles = StyleSheet.create({
     },
     '@media (min-width: 800px and max-width: 1199px)': {
       width: '30%'
+    },
+    ':hover': {
+      boxShadow: '2px 2px 3px 5px rgba(100, 100, 100, 0.6)',
+      cursor: 'pointer'
     }
   },
   cardImage: {
