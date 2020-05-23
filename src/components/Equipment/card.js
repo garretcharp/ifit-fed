@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 function Card ({ image, title }) {
   return (
     <div className={css(styles.container)}>
-      <img className={css(styles.cardImage)} src={image} />
+      <img alt='Equipment' className={css(styles.cardImage)} src={image} />
       <h3 className={css(styles.cardTitle)}>{title}</h3>
     </div>
   )

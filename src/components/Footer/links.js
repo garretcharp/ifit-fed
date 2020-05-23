@@ -44,31 +44,31 @@ function Links () {
     <div className={css(styles.container)}>
       <div className={css(styles.section)}>
         <h5 className={css(styles.sectionHeader)}>Company</h5>
-        <a className={css(styles.sectionLink)} href='#'>
+        <a className={css(styles.sectionLink)} href='/'>
           About
         </a>
-        <a className={css(styles.sectionLink)} href='#'>
+        <a className={css(styles.sectionLink)} href='/'>
           Contact Us
         </a>
-        <a className={css(styles.sectionLink)} href='#'>
+        <a className={css(styles.sectionLink)} href='/'>
           Careers
         </a>
       </div>
       <div className={css(styles.section)}>
         <h5 className={css(styles.sectionHeader)}>Account</h5>
-        <a className={css(styles.sectionLink)} href='#'>
+        <a className={css(styles.sectionLink)} href='/'>
           Login
         </a>
-        <a className={css(styles.sectionLink)} href='#'>
+        <a className={css(styles.sectionLink)} href='/'>
           Create Account
         </a>
       </div>
       <div className={css(styles.section)}>
         <h5 className={css(styles.sectionHeader)}>Support</h5>
-        <a className={css(styles.sectionLink)} href='#'>
+        <a className={css(styles.sectionLink)} href='/'>
           Help Center
         </a>
-        <a className={css(styles.sectionLink)} href='#'>
+        <a className={css(styles.sectionLink)} href='/'>
           Accessibility
         </a>
       </div>

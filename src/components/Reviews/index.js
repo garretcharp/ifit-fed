@@ -36,21 +36,18 @@ const reviewStyles = StyleSheet.create({
 })
 
 const ReviewItem = React.forwardRef(({ image, text, onChange }, ref) => {
-  function updateWidth () {
-    if (ref && ref.current && onChange) onChange(ref.current.offsetWidth)
-  }
-
   useEffect(() => {
     if (ref && ref.current && onChange) {
       onChange(ref.current.offsetWidth)
-      window.addEventListener('resize', updateWidth)
-      return () => window.removeEventListener('resize', updateWidth)
+      window.addEventListener('resize', () => {
+        if (ref && ref.current && onChange) onChange(ref.current.offsetWidth)
+      })
     }
-  }, [ref])
+  }, [ref, onChange])
 
   return (
     <div ref={ref} className={css(reviewStyles.container)}>
-      <img src={image} />
+      <img alt='Company Logo' src={image} />
       <p className={css(reviewStyles.reviewText)}>{text}</p>
     </div>
   )

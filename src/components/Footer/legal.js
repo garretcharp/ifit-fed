@@ -66,10 +66,10 @@ function Legal () {
         <p className={css(styles.items)}>
           &copy; iFit.com. All Rights Reserved.
         </p>
-        <a href='#' className={css(styles.items)}>
+        <a href='/' className={css(styles.items)}>
           Privacy Policy
         </a>
-        <a href='#' className={css(styles.items)}>
+        <a href='/' className={css(styles.items)}>
           Terms of Use
         </a>
       </div>

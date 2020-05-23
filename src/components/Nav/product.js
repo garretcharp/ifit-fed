@@ -46,17 +46,17 @@ function ProductNav () {
     <div className={css(styles.container)}>
       <ul className={css(styles.list)}>
         <li className={css(styles.listItem)}>
-          <a className={css(styles.link)} href='#'>
+          <a className={css(styles.link)} href='/'>
             BLOG
           </a>
         </li>
         <li className={css(styles.listItem)}>
-          <a className={css(styles.link)} href='#'>
+          <a className={css(styles.link)} href='/'>
             NOURISH
           </a>
         </li>
         <li className={css(styles.listItem)}>
-          <a className={css(styles.link)} href='#'>
+          <a className={css(styles.link)} href='/'>
             SHOP
           </a>
         </li>

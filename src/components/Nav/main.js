@@ -53,7 +53,9 @@ const styles = StyleSheet.create({
       cursor: 'pointer'
     },
     padding: '10px 0',
-    userSelect: 'none'
+    userSelect: 'none',
+    border: 'none',
+    backgroundColor: 'transparent'
   },
   mobileContainer: {
     borderTop: '1px solid #d5d6d6',
@@ -91,22 +93,22 @@ const styles = StyleSheet.create({
 const NavLinks = ({ className }) => (
   <ul className={css(styles.list)}>
     <li className={className}>
-      <a className={css(styles.link)} href='#'>
+      <a className={css(styles.link)} href='/'>
         Exercise
       </a>
     </li>
     <li className={className}>
-      <a className={css(styles.link)} href='#'>
+      <a className={css(styles.link)} href='/'>
         Nutrition
       </a>
     </li>
     <li className={className}>
-      <a className={css(styles.link)} href='#'>
+      <a className={css(styles.link)} href='/'>
         Activity
       </a>
     </li>
     <li className={className}>
-      <a className={css(styles.link)} href='#'>
+      <a className={css(styles.link)} href='/'>
         Sleep
       </a>
     </li>
@@ -119,38 +121,34 @@ function MainNav () {
   const [width, setWidth] = useState(window.innerWidth)
   const breakpoint = 650
 
-  const updateWidth = () => setWidth(window.innerWidth)
-
   useEffect(() => {
-    window.addEventListener('resize', updateWidth)
-
-    return () => window.removeEventListener('resize', updateWidth)
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
 
   return (
     <div>
       <div className={css(styles.container)}>
         <div className={css(styles.logo)}>
-          <img src={Logo} />
+          <img alt='Logo' src={Logo} />
         </div>
 
         <div>
           {width > breakpoint ? (
             <NavLinks className={css(styles.listItem)} />
           ) : (
-            <a
+            <button
               onClick={() => {
                 setOpen(!open)
               }}
               className={css(styles.mobileMenu)}
             >
               Menu
-            </a>
+            </button>
           )}
         </div>
 
         <div>
-          <a className={css(styles.button)} href='#'>
+          <a className={css(styles.button)} href='/'>
             Sign Up
           </a>
         </div>

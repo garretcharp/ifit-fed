@@ -106,31 +106,31 @@ function Card ({
   return (
     <div className={css(styles.container)}>
       <div className={css(styles.image)}>
-        <img className={css(styles.cardImage)} src={image} />
+        <img alt='Workout Card' className={css(styles.cardImage)} src={image} />
         {amount && amount > 0 && (
           <div className={css(styles.playlistOverlay)}>
             <p className={css(styles.detail, styles.workoutMetric)}>{amount}</p>
             <p className={css(styles.detail, styles.workoutMetric)}>Workouts</p>
-            <img src={Playlist} />
+            <img alt='Playlist' src={Playlist} />
           </div>
         )}
       </div>
       <div className={css(styles.content)}>
         <div className={css(styles.titleRow)}>
           <h3 className={css(styles.cardTitle)}>{title}</h3>
-          <img className={css(styles.avatar)} src={avatar} />
+          <img alt='Avatar' className={css(styles.avatar)} src={avatar} />
         </div>
         {time && distance && (
           <div className={css(styles.detailsContainer)}>
             <div className={css(styles.detailsRow)}>
-              <img src={Timer} />
+              <img alt='Time' src={Timer} />
               <p className={css(styles.detail)}>{time}</p>
-              <img src={Distance} />
+              <img alt='Distance' src={Distance} />
               <p className={css(styles.detail)}>{distance}</p>
             </div>
 
             {viewAll && (
-              <a href='#' className={css(styles.detailsLink)}>
+              <a href='/' className={css(styles.detailsLink)}>
                 View Details
               </a>
             )}

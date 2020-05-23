@@ -1,4 +1,4 @@
-import React, { useState, createRef, useLayoutEffect, useEffect } from 'react'
+import React, { useState, createRef, useEffect } from 'react'
 import { StyleSheet, css } from 'aphrodite'
 
 const arrowStyle = StyleSheet.create({
@@ -64,14 +64,16 @@ function Slider (props) {
     if (ref.current && ref.current.offsetWidth !== containerWidth) {
       setContainerWidth(ref.current.offsetWidth)
       setVisibleElements(Math.round(ref.current.offsetWidth / props.itemWidth))
-    }
-  }, [ref.current])
-
-  useEffect(() => {
-    if (containerWidth) {
+    } else if (containerWidth) {
       setVisibleElements(Math.round(containerWidth / props.itemWidth))
     }
-  }, [props.itemWidth])
+  }, [
+    ref,
+    containerWidth,
+    props.itemWidth,
+    setContainerWidth,
+    setVisibleElements
+  ])
 
   return (
     <div className={css(styles.container)} ref={ref}>

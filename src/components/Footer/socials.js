@@ -28,28 +28,28 @@ function Socials () {
   return (
     <div className={css(styles.container)}>
       <div className={css(styles.item)}>
-        <a href='#'>
-          <img src={YouTube} />
+        <a href='/'>
+          <img alt='YouTube' src={YouTube} />
         </a>
       </div>
       <div className={css(styles.item)}>
-        <a href='#'>
-          <img src={Pinterest} />
+        <a href='/'>
+          <img alt='Pinterest' src={Pinterest} />
         </a>
       </div>
       <div className={css(styles.item)}>
-        <a href='#'>
-          <img src={Facebook} />
+        <a href='/'>
+          <img alt='Facebook' src={Facebook} />
         </a>
       </div>
       <div className={css(styles.item)}>
-        <a href='#'>
-          <img src={Twitter} />
+        <a href='/'>
+          <img alt='Twitter' src={Twitter} />
         </a>
       </div>
       <div className={css(styles.item)}>
-        <a href='#'>
-          <img src={Instagram} />
+        <a href='/'>
+          <img alt='Instagram' src={Instagram} />
         </a>
       </div>
     </div>

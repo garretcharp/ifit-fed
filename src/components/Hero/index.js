@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     letterSpacing: '1',
     textAlign: 'center',
-    fontFamily: 'Proxima Nova Lt',
     '@media (min-width: 600px)': {
       fontSize: '32px',
       lineHeight: '50px'
@@ -68,7 +67,7 @@ function Hero () {
       <h1 className={css(styles.heroText)}>
         The best personal training, right in your own home
       </h1>
-      <a href='#' className={css(styles.ctaButton)}>
+      <a href='/' className={css(styles.ctaButton)}>
         Join iFIT Coach
       </a>
     </div>
