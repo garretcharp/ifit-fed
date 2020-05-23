@@ -23,6 +23,15 @@ const reviewStyles = StyleSheet.create({
     },
     padding: '12px',
     textAlign: 'center'
+  },
+  reviewText: {
+    opacity: '0.8',
+    color: '#2e3134',
+    fontFamily: 'Proxima Nova Rg',
+    fontSize: '16px',
+    fontWeight: '400',
+    letterSpacing: '0.3px',
+    lineHeight: '24px'
   }
 })
 
@@ -42,7 +51,7 @@ const ReviewItem = React.forwardRef(({ image, text, onChange }, ref) => {
   return (
     <div ref={ref} className={css(reviewStyles.container)}>
       <img src={image} />
-      <p>{text}</p>
+      <p className={css(reviewStyles.reviewText)}>{text}</p>
     </div>
   )
 })
