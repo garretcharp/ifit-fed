@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
     borderRadius: '4px',
     width: '28px',
     height: '28px',
-    padding: '8px'
+    padding: '8px',
+    objectFit: 'cover'
   },
   titleRow: {
     display: 'flex',
