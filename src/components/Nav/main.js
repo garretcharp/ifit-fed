@@ -119,8 +119,12 @@ function MainNav () {
   const [width, setWidth] = useState(window.innerWidth)
   const breakpoint = 650
 
+  const updateWidth = () => setWidth(window.innerWidth)
+
   useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    window.addEventListener('resize', updateWidth)
+
+    return () => window.removeEventListener('resize', updateWidth)
   }, [])
 
   return (
