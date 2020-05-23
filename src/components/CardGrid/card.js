@@ -92,6 +92,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'rgba(0,0,0,0.5)'
   },
+  playlistNumber: {
+    color: '#ffffff',
+    fontFamily: 'League Gothic - Regular',
+    fontSize: '28px',
+    fontWeight: '400',
+    letterSpacing: '0.5px',
+    lineHeight: '30px'
+  },
   image: {
     position: 'relative'
   },
@@ -114,7 +122,9 @@ function Card ({
         <img alt='Workout Card' className={css(styles.cardImage)} src={image} />
         {amount && amount > 0 && (
           <div className={css(styles.playlistOverlay)}>
-            <p className={css(styles.detail, styles.workoutMetric)}>{amount}</p>
+            <p className={css(styles.detail, styles.playlistNumber)}>
+              {amount}
+            </p>
             <p className={css(styles.detail, styles.workoutMetric)}>Workouts</p>
             <img alt='Playlist' src={Playlist} />
           </div>
