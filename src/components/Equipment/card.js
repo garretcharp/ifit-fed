@@ -4,9 +4,11 @@ import { StyleSheet, css } from 'aphrodite'
 const styles = StyleSheet.create({
   container: {
     margin: '24px',
+    padding: '24px 12px',
     flex: '0 0 auto',
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
     maxWidth: '400px',
     width: '90%',
     boxShadow: '0px 1px 2px rgba(46, 49, 52, 0.4)',
@@ -19,8 +21,8 @@ const styles = StyleSheet.create({
     }
   },
   cardImage: {
-    width: '100%',
-    height: '100%'
+    width: '70%',
+    height: '70%'
   },
   cardTitle: {
     opacity: '0.8',
@@ -30,7 +32,9 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: '0.3',
     lineHeight: '28px',
-    textAlign: 'center'
+    textAlign: 'center',
+    padding: '56px 0 0 0',
+    margin: '0'
   }
 })
 
