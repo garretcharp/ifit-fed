@@ -11,6 +11,9 @@ const styles = StyleSheet.create({
     height: 'calc(85vh - 100px)',
     background: `linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.21)), url(${Background})`,
     backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundOrigin: 'border-box',
+    backgroundPosition: 'center',
     padding: '0 36px'
   },
   heroText: {
