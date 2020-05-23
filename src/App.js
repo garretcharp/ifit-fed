@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Reviews from './components/Reviews'
 import CardGrid from './components/CardGrid'
+import Equipment from './components/Equipment'
 
 import Footer from './components/Footer'
 import './App.css'
@@ -16,6 +17,7 @@ function App () {
         <Hero />
         <Reviews />
         <CardGrid />
+        <Equipment />
       </div>
 
       <Footer />
